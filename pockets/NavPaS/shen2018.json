@@ -1,0 +1,24 @@
+{
+    "target": "NaVPaS",
+    "paper_name": "Structural basis for the modulation of voltage-gated sodium channels by animal toxins",
+    "DOI": "10.1126/science.aau2596",
+    "paper_id": "shen2018",
+    "pockets": [
+        {
+            "pocket_id": "TTX and STX binding site",
+            "description": "TTX blocks the entrance to the SF vestibule through an extensive network of electrostatic interactions. The invariant acidic residues on the corresponding locus of the P2 segment in repeats I, II, and IV each form multiple hydrogen bonds or salt bridges with the polar groups of TTX.",
+            "amino_acids": [
+                "Asp375",
+                "Tyr376",
+                "Glu701",
+                "Phe1060",
+                "Gly1062",
+                "Trp1063"
+            ],
+            "ligands": [
+                "TTX",
+                "STX"
+            ]
+        }
+    ]
+}

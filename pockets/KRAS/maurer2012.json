@@ -1,0 +1,25 @@
+{
+    "target": "GTPase KRas",
+    "paper_name": "Small-molecule ligands bind to a distinct pocket in Ras and inhibit SOS-mediated nucleotide exchange activity",
+    "DOI": "0.1073/pnas.1116510109",
+    "paper_id": "maurer2012",
+    "pockets": [
+        {
+            "pocket_id": "Small-molecule binding pocket",
+            "description": "This small-molecule binding site is between helix α2 and the core β-sheet (β1-β3), with amphipathic interactions centered on a hydrophobic pocket approximately 7×7 Å wide and 5 Å deep.",
+            "amino_acids": [
+                "K5",
+                "L6",
+                "V7",
+                "I55",
+                "L56",
+                "T74",
+                "D54",
+                "R41"
+            ],
+            "ligands": [
+                "DCAI"
+            ]
+        }
+    ]
+}

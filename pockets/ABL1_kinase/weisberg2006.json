@@ -1,0 +1,21 @@
+{
+    "target": "Tyrosine-protein kinase ABL1",
+    "paper_name": "AMN107 (nilotinib): a novel and selective inhibitor of BCR-ABL",
+    "DOI": "10.1038/sj.bjc.6603170",
+    "paper_id": "weisberg2006",
+    "pockets": [
+        {
+            "pocket_id": "ATP binding site",
+            "description": "The novel, selective BCRABL inhibitor, AMN107, was designed to fit into the ATP-binding site of the BCR-ABL protein with higher affinity than imatinib.",
+            "amino_acids": [
+                "Met318",
+                "Thr315",
+                "Glu286",
+                "Asp381"
+            ],
+            "ligands": [
+                "AMN107 (nilotinib)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "target": "5-hydroxytryptamine receptor 2A",
+    "paper_name": "Structure of a Hallucinogen-Activated Gq-Coupled 5- HT2A Serotonin Receptor",
+    "DOI": "10.1016/j.cell.2020.08.024",
+    "paper_id": "kim2020",
+    "pockets": [
+        {
+            "pocket_id": "Ligand binding pocket",
+            "description": "Conserved interactions observed in all three structures reveal a shared mechanism for HTR2A binding. A salt bridge is observed between D155 and a positively charged nitrogen in each ligand, which is a critical interaction for ligand binding in serotonin and other monoamine receptors.",
+            "amino_acids": [
+                "D155",
+                "V156",
+                "S159",
+                "V235",
+                "G238",
+                "S239",
+                "S242",
+                "W336",
+                "F339",
+                "F340",
+                "G369"
+            ],
+            "ligands": [
+                "25CN-NBOH",
+                "LSD",
+                "Methiothepin"
+            ]
+        }
+    ]
+}

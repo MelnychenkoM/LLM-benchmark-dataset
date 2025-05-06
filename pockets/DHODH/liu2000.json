@@ -1,0 +1,50 @@
+{
+    "target": "Dihydroorotate dehydrogenase",
+    "paper_name": "Structures of human dihydroorotate dehydrogenase in complex with antiproliferative agents",
+    "DOI": "10.1016/s0969-2126(00)00077-0",
+    "paper_id": "liu2000",
+    "pockets": [
+        {
+            "pocket_id": "FMN-orotate redox site",
+            "description": "The bound orotate and FMN define one redox site of human DHODH. The aromatic ring of orotate is almost parallel to FMN and is 3.2–3.8 Å from its si face. Orotate’s other face is completely covered by the Asn212–Gly226 loop.",
+            "amino_acids": [
+                "Lys100",
+                "Asn145",
+                "Tyr147",
+                "Gly148",
+                "Asn212",
+                "Ser214",
+                "Ser215",
+                "Pro216",
+                "Thr218",
+                "Arg222",
+                "Gln225",
+                "Lys255",
+                "Asn284",
+                "Gly306",
+                "Gly335"
+            ],
+            "ligands": [
+                "orotate-FMN"
+            ]
+        },
+        {
+            "pocket_id": "Inhibitor-binding region site",
+            "description": "The space between α1 and α2 forms a 10 × 20 Å slot in the hydrophobic patch, with the short α1–α2 loop at the narrow end. This slot forms the entrance to a tunnel that ends at the FMN cavity beneath the α1–α2 loop. This tunnel narrows as it goes into the proximal redox site, and several charged or polar sidechains (Gln47, His56, Tyr356, Thr360 and Arg136) are located at the narrow end of the channel. Ubiquinone, which can readily diffuse in the mitochondrial inner membrane, undoubtedly uses this tunnel to approach FMNH2 for a redox reaction.",
+            "amino_acids": [
+                "Met43",
+                "Gln47",
+                "His56",
+                "Ala59",
+                "Leu68",
+                "Arg136",
+                "Tyr356",
+                "Thr360",
+                "Pro364"
+            ],
+            "ligands": [
+                "A771726"
+            ]
+        }
+    ]
+}

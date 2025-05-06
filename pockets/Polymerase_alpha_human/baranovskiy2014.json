@@ -1,0 +1,25 @@
+{
+    "target": "DNA polymerase alpha",
+    "paper_name": "Structural basis for inhibition of DNA replication by aphidicolin",
+    "DOI": "10.1093/nar/gku1209",
+    "paper_id": "baranovskiy2014",
+    "pockets": [
+        {
+            "pocket_id": "dNTP-binding site",
+            "description": "The dNTP-binding site of human Pol alpha is located at the junction between the palm and the fingers. Upon dNTP binding, the latter subdomain is able to change its conformation from open to the closed one, which results in stabilization of the precatalytic ternary complex Pol/template: primer/dNTP. This structure catches the transient step of dNTP binding followed by fingers closing and phosphodiester bond formation. It revealed that fingers interact with dNTP even in the open conformation. ",
+            "amino_acids": [
+                "Leu864",
+                "Tyr865",
+                "Asn954",
+                "Ser955",
+                "Tyr957",
+                "Gly958",
+                "Arg784",
+                "Cys959"
+            ],
+            "ligands": [
+                "Aphidicolin"
+            ]
+        }
+    ]
+}

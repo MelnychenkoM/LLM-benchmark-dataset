@@ -1,0 +1,28 @@
+{
+    "target": "Tyrosine-protein kinase ABL1",
+    "paper_name": "Identification and Optimization of Novel Small c-Abl Kinase Activators Using Fragment and HTS Methodologies",
+    "DOI": "10.1021/acs.jmedchem.8b01872",
+    "paper_id": "simpson2019",
+    "pockets": [
+        {
+            "pocket_id": "Myristoyl binding site",
+            "description": "Allosteric inhibitors of c-Abl kinase, also active against BCR-Abl, bind at the myristoyl pocket, stabilizing interaction with helix αI′ and mimicking the autoinhibited conformation of c-Abl. Concurrently, our group have previously described the discovery of a small molecule activator of c-Abl kinase, which binds at the same pocket, displacing the myristoyl latch and leading to a cellular activation",
+            "amino_acids": [
+                "Leu360",
+                "Phe512",
+                "Leu359",
+                "Ala363",
+                "Val487",
+                "Leu448",
+                "Ala452",
+                "Ala462",
+                "Arg351",
+                "Ala356"
+            ],
+            "ligands": [
+                "DPH",
+                "Aminothiazoles"
+            ]
+        }
+    ]
+}

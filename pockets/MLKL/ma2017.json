@@ -1,0 +1,23 @@
+{
+    "target": "Mixed lineage kinase domain-like protein",
+    "paper_name": "ATP-Competitive MLKL Binders Have No Functional Impact on Necroptosis",
+    "DOI": "10.1371/journal.pone.0165983",
+    "paper_id": "ma2017",
+    "pockets": [
+        {
+            "pocket_id": "ATP-binding site",
+            "description": "The co-crystal structure showed that cpd 1 binds in the ATP binding site of MLKL by making two hydrogen bond interactions between the backbone amide and carbonyl of the hinge and the amino pyrimidine of the compound.",
+            "amino_acids": [
+                "Glu293",
+                "Glu250",
+                "Gly349",
+                "Arg210",
+                "Phe350",
+                "K230"
+            ],
+            "ligands": [
+                "cpd1-4"
+            ]
+        }
+    ]
+}

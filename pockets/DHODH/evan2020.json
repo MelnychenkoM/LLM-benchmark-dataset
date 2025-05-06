@@ -1,0 +1,22 @@
+{
+    "target": "Dihydroorotate dehydrogenase",
+    "paper_name": "Metabolic Modifier Screen Reveals Secondary Targets of Protein Kinase Inhibitors within Nucleotide Metabolism",
+    "DOI": "10.1016/j.chembiol.2019.10.012",
+    "paper_id": "evan2020",
+    "pockets": [
+        {
+            "pocket_id": "Inhibitor-binding region site",
+            "description": "Both compounds bind in a hydrophobic channel composed by two N-domain a helices through which ubiquinone travels, a mechanism consistent with previously identified DHODH inhibitors.",
+            "amino_acids": [
+                "Arg69",
+                "Tyr37",
+                "Leu66",
+                "Gln46"
+            ],
+            "ligands": [
+                "TAK-632",
+                "OSU-03012"
+            ]
+        }
+    ]
+}

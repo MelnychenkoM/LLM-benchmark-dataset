@@ -1,0 +1,49 @@
+{
+    "target": "Gamma-aminobutyric acid receptor",
+    "paper_name": "Shared structural mechanisms of general anaesthetics and benzodiazepines",
+    "DOI": "10.1038/s41586-020-2654-5",
+    "paper_id": "kim2020_",
+    "pockets": [
+        {
+            "pocket_id": "Benzodiazepines binding site",
+            "description": "The relatively high disorder in the γ-TMD observed in all structures was most notable in the flumazenil complex, in which a gap is present at the γ–β interface. This gap shrinks in the absence of flumazenil and disappears in the presence of diazepam. ",
+            "amino_acids": [
+                "γS280",
+                "γF304",
+                "βP228",
+                "γT277"
+            ],
+            "ligands": [
+                "Flumazenil",
+                "Diazepam"
+            ]
+        },
+        {
+            "pocket_id": "Etomidate/propofol binding site",
+            "description": "In vitro mutagenesis studies identified binding sites for both compounds at the β–α interfaces, in positions equivalent to the β–α TMD binding sites of diazepam; these binding sites were responsible for the potentiation of GABA binding by these compounds, as well as for the direct activation of the receptor at higher concentrations.",
+            "amino_acids": [
+                "βN265",
+                "βF289",
+                "αP233",
+                "βM286",
+                "αI228"
+            ],
+            "ligands": [
+                "Etomidate",
+                "Propofol"
+            ]
+        },
+        {
+            "pocket_id": "Phenobarbital binding site",
+            "description": "The binding mode of phenobarbital is equivalent for the two sites: the barbituric acid group rests deep in the M3–M1 interfaces, the phenyl group orients away from the channel axis and the ethyl group orients towards the pore. ",
+            "amino_acids": [
+                "βL223",
+                "S270",
+                "S280"
+            ],
+            "ligands": [
+                "Phenobarbital"
+            ]
+        }
+    ]
+}

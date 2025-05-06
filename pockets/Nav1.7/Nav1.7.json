@@ -1,0 +1,29 @@
+{
+    "target": "Sodium channel protein type 7",
+    "paper_name": "Structural basis of Nav1.7 inhibition by an isoform-selective small-molecule antagonist",
+    "DOI": "10.1126/science.aac5464",
+    "paper_id": "Nav1.7",
+    "pockets": [
+        {
+            "pocket_id": "GX-936 binding pocket",
+            "description": "GX-936 binding pocket is located in the S1-S4 segments. These segments form the four peripheral voltage-sensing domains, which are distinct in primary sequence. Each VSD is capable of sensing changes in the membrane voltage by virtue of positively charged arginine residues conserved along the S4 helix, and it is believed that the S4 helix translates within the VSD during voltage sensing. GX-936 and related inhibitors bind to the activated state of voltage-sensor domain IV (VSD4), where their anionic aryl sulfonamide warhead engages the fourth arginine gating charge on the S4 helix. According to the electrostatic surface, binding pocket includes several regions: the lipid-exposed, selectivity and anion-binding. Residues from the S2 and S3 helices are key determinants of isoform selectivity, and bound phospholipids implicate the membrane as a modulator of channel function and pharmacology.",
+            "amino_acids": [
+                "E1534",
+                "Y1537",
+                "W1538",
+                "N1540",
+                "V1541",
+                "G1581",
+                "M1582",
+                "A1585",
+                "D1586",
+                "R1602",
+                "R1605",
+                "R1608"
+            ],
+            "ligands": [
+                "GX-936"
+            ]
+        }
+    ]
+}

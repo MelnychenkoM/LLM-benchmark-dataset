@@ -1,0 +1,22 @@
+{
+    "target": "Dihydroorotate dehydrogenase",
+    "paper_name": "SAR-Based Optimization of a 4‑Quinoline Carboxylic Acid Analogue with Potent Antiviral Activity",
+    "DOI": "10.1021/ml300464h",
+    "paper_id": "das2013",
+    "pockets": [
+        {
+            "pocket_id": "Inhibitor-binding region site",
+            "description": "TThe binding site is predominantly hydrophobic, and the only H-bond interaction is formed between the inhibitor carboxylate and R136. Several amino acid residues (L46, F62, L67, and Y38) in the binding site have rotated to accommodate the isopropyl group on the diaryl ether moiety.",
+            "amino_acids": [
+                "L46",
+                "F62",
+                "L67",
+                "Y38",
+                "R136"
+            ],
+            "ligands": [
+                "C44"
+            ]
+        }
+    ]
+}

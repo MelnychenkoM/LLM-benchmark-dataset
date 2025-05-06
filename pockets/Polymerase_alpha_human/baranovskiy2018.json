@@ -1,0 +1,29 @@
+{
+    "target": "DNA polymerase alpha",
+    "paper_name": "Activity and fidelity of human DNA polymerase  depend on primer structure",
+    "DOI": "10.1074/jbc.RA117.001074",
+    "paper_id": "baranovskiy2018",
+    "pockets": [
+        {
+            "pocket_id": "dNTP-binding site",
+            "description": "The dNTP-binding site of B-family Pols is located at the junction between the palm and the fingers (Fig. 4A). Upon dNTP binding, the latter subdomain is able to change its conformation from open to the closed one, which results in stabilization of the precatalytic ternary complex Pol/template: primer/dNTP.",
+            "amino_acids": [
+                "Leu864",
+                "Tyr865",
+                "Pro866",
+                "Tyr957",
+                "Thr1003",
+                "Asp1004",
+                "Arg922",
+                "Lys950",
+                "Ser863",
+                "Asn954",
+                "Asp860",
+                "Lys926"
+            ],
+            "ligands": [
+                "dNTP"
+            ]
+        }
+    ]
+}

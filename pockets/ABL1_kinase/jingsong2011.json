@@ -1,0 +1,30 @@
+{
+    "target": "Tyrosine-protein kinase ABL1",
+    "paper_name": "Discovery and Characterization of a CellPermeable, Small-Molecule c-Abl Kinase Activator that Binds to the Myristoyl Binding Site",
+    "DOI": "10.1016/j.chembiol.2010.12.013",
+    "paper_id": "jingsong2011",
+    "pockets": [
+        {
+            "pocket_id": "Myristoyl binding site",
+            "description": "Based on the crystal structure, the N-terminal myristoyl group of c-Abl binds to the myristoyl binding site on the C-lobe of the kinase domain and this binding helps maintain the inactive conformation of c-Ab. The above FP binding data strongly suggest that DPH binds to the myristoyl binding site of c-Abl.",
+            "amino_acids": [
+                "Ala356",
+                "Leu359",
+                "Leu360",
+                "Ala363",
+                "Tyr454",
+                "Glu481",
+                "Pro484",
+                "Val487",
+                "Leu448",
+                "Phe512",
+                "Phe516",
+                "I521",
+                "V525"
+            ],
+            "ligands": [
+                "R-DPH"
+            ]
+        }
+    ]
+}

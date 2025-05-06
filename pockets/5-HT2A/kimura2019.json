@@ -1,0 +1,29 @@
+{
+    "target": "5-hydroxytryptamine receptor 2A",
+    "paper_name": "Structures of the 5-HT2A receptor in complex with the antipsychotics risperidone and zotepine",
+    "DOI": "10.1038/s41594-018-0180-z",
+    "paper_id": "kimura2019",
+    "pockets": [
+        {
+            "pocket_id": "Ligand binding pocket",
+            "description": "Risperidone and zotepine exhibit high affinities not only for 5-HT2AR and D2R, but also for 5-HT2CR, the dopamine D3 and D4 receptors, α1A-adrenergic receptors, and H1R. The residues involved in the binding of risperidone or zotepine in 5-HT2AR are highly conserved in aminergic receptors, particularly on the intracellular side of the conserved salt bridge.",
+            "amino_acids": [
+                "Asp155",
+                "Trp336",
+                "Phe332",
+                "Ile163",
+                "Phe243",
+                "Ser159",
+                "Phe340",
+                "Tyr370",
+                "Val366",
+                "Leu228",
+                "Leu229"
+            ],
+            "ligands": [
+                "Zotepine",
+                "Risperidone"
+            ]
+        }
+    ]
+}

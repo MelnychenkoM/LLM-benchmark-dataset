@@ -1,0 +1,33 @@
+{
+    "target": "Muscarinic acetylcholine receptor M2",
+    "paper_name": "Muscarinic acetylcholine receptors: novel opportunities for drug development",
+    "DOI": "10.1038/nrd4295",
+    "paper_id": "kruse2015",
+    "pockets": [
+        {
+            "pocket_id": "Extracellular vestibule",
+            "description": "Part of the large, solvent-accesible cavity, located at the upper portion of this cavity and termed extracellular verstibule. It is lined with residues that have been implicated in the binding of allosteric modulators.",
+            "amino_acids": [
+                "Trp422",
+                "Tyr177",
+                "Tyr80",
+                "Tyr83",
+                "Phe181"
+            ],
+            "ligands": [
+                "LY2119620"
+            ]
+        },
+        {
+            "pocket_id": "Orthosteric binding site",
+            "description": "In the active state of the M2 receptor, the small orthosteric agonist iperoxo engages Asp1033.32 with its cationic head group, whereas the polar isoxazoline tail contacts Asn4046.52 with a single hydrogen bond, paralleling the interactions of the inactive receptor with the antagonist QNB (FIG. 4c).",
+            "amino_acids": [
+                "Asp103",
+                "Asn404"
+            ],
+            "ligands": [
+                "Iperoxo"
+            ]
+        }
+    ]
+}

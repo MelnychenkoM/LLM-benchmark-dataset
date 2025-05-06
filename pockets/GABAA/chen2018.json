@@ -1,0 +1,25 @@
+{
+    "target": "Gamma-aminobutyric acid receptor",
+    "paper_name": "Structural basis of neurosteroid anesthetic action on GABAA receptors",
+    "DOI": "10.1038/s41467-018-06361-4",
+    "paper_id": "chen2018",
+    "pockets": [
+        {
+            "pocket_id": "Alphaxalone binding site.",
+            "description": "The structure of the α1GABAAR chimera co-crystallized with alphaxalone shows that alphaxalone binds to five equivalent inter-subunit sites close to the intracellular end of the α1GABAAR TMD",
+            "amino_acids": [
+                "Q242",
+                "V243",
+                "W246",
+                "A305",
+                "T306",
+                "Y309",
+                "F310",
+                "P401"
+            ],
+            "ligands": [
+                "Alphaxalone"
+            ]
+        }
+    ]
+}

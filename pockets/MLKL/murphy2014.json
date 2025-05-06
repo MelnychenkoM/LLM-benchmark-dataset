@@ -1,0 +1,26 @@
+{
+    "target": "Mixed lineage kinase domain-like protein",
+    "paper_name": "Insights into the evolution of divergent nucleotide-binding mechanisms among pseudokinases revealed by crystal structures of human and mouse MLKL",
+    "DOI": "10.1042/BJ20131270",
+    "paper_id": "murphy2014",
+    "pockets": [
+        {
+            "pocket_id": "ATP-binding site",
+            "description": "Pseudoactive site of the human MLKL. ATP is readily accommodated in the pseudoactive site of human MLKL, with the only potential hindrance arising from the packing of the side chain from the glycine-rich loop residue, Arg210. DFG motif of PKA is replaced by GFE in human MLKL. the position of the human MLKL ‘catalytic’ loop differs markedly from that of PKA. The human MLKL sequence lacks the catalytic aspartic acid usually present within the HRD motif of conventional protein kinases (YRD in PKA) and instead contains HGK. Of particular note, the human MLKL pseudoactive site is markedly different from that of mouse MLKL.",
+            "amino_acids": [
+                "Lys230",
+                "Lys331",
+                "Asn336",
+                "Glu351",
+                "Arg210",
+                "Glu250"
+            ],
+            "ligands": [
+                "ADP",
+                "AMP-PNP",
+                "GTP",
+                "AMP"
+            ]
+        }
+    ]
+}

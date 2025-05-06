@@ -1,0 +1,28 @@
+{
+    "target": "GTPase KRas",
+    "paper_name": "Identification of MRTX1133, a Noncovalent, Potent, and Selective KRASG12D Inhibitor",
+    "DOI": "10.1021/acs.jmedchem.1c01688",
+    "paper_id": "wang2021",
+    "pockets": [
+        {
+            "pocket_id": "Induced switch II pocket",
+            "description": "KRAS presents the high affinity for GDP/GTP and the lack of any other apparent binding pocket, which have significantly hampered the development of KRAS inhibitors. Developed KRAS inhibitors are design to achieve greater occupancy of the induced switch II pocket. This will lead to sustained functional suppression of KRAS pathway signaling in cellular and tumor environments harboring the KRASG12D mutation sufficient for antitumor efficacy.",
+            "amino_acids": [
+                "Asp12",
+                "Gly10",
+                "Arg68",
+                "Gly60",
+                "Glu62",
+                "Val9",
+                "Thr58",
+                "Phe78",
+                "Met72",
+                "Tyr96",
+                "Ile100"
+            ],
+            "ligands": [
+                "MRTX1133"
+            ]
+        }
+    ]
+}

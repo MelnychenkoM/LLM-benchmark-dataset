@@ -1,0 +1,23 @@
+{
+    "target": "Muscarinic acetylcholine receptor M3",
+    "paper_name": "Structure and Dynamics of the M3 Muscarinic Acetylcholine Receptor",
+    "DOI": "10.1038/nature10867",
+    "paper_id": "kruse2012",
+    "pockets": [
+        {
+            "pocket_id": "Orthosteric binding site",
+            "description": "In the M3 receptor, as in M2, the ligand is deeply buried within the TM receptor core and covered by a lid of three conserved tyrosines: Y148, Y506, and Y529.",
+            "amino_acids": [
+                "Y148",
+                "Y529",
+                "Y506",
+                "N507",
+                "D147",
+                "Leu225"
+            ],
+            "ligands": [
+                "QNB"
+            ]
+        }
+    ]
+}
