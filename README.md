@@ -1,5 +1,5 @@
 # Pocket dataset benchmark
-Benchmark dataset published in the paper Leveraging **Large Language Models for Literature-Driven Prioritization of Protein Binding Pockets** (LINK). Contains articles with human-annotated protein binding sites.
+This repository contains the code and benchmark dataset associated with the paper **Leveraging Large Language Models for Literature-Driven Prioritization of Protein Binding Pockets**.
 
 ![](workflow.jpg)
 
@@ -11,7 +11,7 @@ This dataset compiles information on protein-ligand binding pockets, curated fro
 
 Two Excel files provide an aggregated view of the data:
 
-1.  **`pockets.xlsx`**: This file serves as a primary index and contains general information for each publication and the pockets it describes. Key columns include:
+1.  **`LLM-benchmark-dataset/tables/pockets.xlsx`**: This file serves as a primary index and contains general information for each publication and the pockets it describes. Key columns include:
     *   `paper_id`: Unique identifier for the publication (e.g., `shen2018`).
     *   `paper_name`: Title of the publication.
     *   `DOI`: Digital Object Identifier of the publication.
@@ -21,7 +21,7 @@ Two Excel files provide an aggregated view of the data:
     *   `ligands`: Comma-separated list of ligands associated with the pocket.
     *   `folder_name`: Folder name where the paper is located.
 
-2.  **`amino_acids.xlsx`**: This file links specific amino acid residues to the binding pockets defined in `pockets.xlsx`. Key columns include:
+2.  **`LLM-benchmark-dataset/tables/amino_acids.xlsx`**: This file links specific amino acid residues to the binding pockets defined in `pockets.xlsx`. Key columns include:
     *   `paper_id`: Links back to the publication.
     *   `target`: The biological target.
     *   `pocket_id`: Links back to the specific pocket.
@@ -59,3 +59,60 @@ A Python script, `dataset.py`, is provided to facilitate synchronization between
     *Action: Overwrites `pockets.xlsx` with data aggregated from all JSON files.*
 
 **Caution:** Executing these commands will overwrite the target files. It's advisable to back up your data before running synchronization scripts if you are unsure. Also, arbitraty columns in JSON or Excel are not currently supported.
+
+
+## Prerequisites for LLM pocket extraction
+
+1.  **Python 3.10**: Ensure you have Python installed.
+2.  **Dependencies**: Install the required Python packages.
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **GROBID**: This project relies on GROBID for processing PDF articles. You need to have a GROBID instance running and accessible. The easiest way is to use Docker:
+    ```bash
+    docker run --rm --gpus all --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.8.1
+    ```
+4. **API Keys**: Set up your `OPENAI_API_KEY` or `GOOGLE_API_KEY`:
+    ```bash
+    export OPENAI_API_KEY=YOUR_KEY
+    export GOOGLE_API_KEY=YOUR_KEY
+    ```
+
+## How to Run
+
+The main script is `main.py`. It requires three positional arguments: the path to an article, the path to a PDB file, and the name of the target protein.
+To run the script with default settings inside the `src` folder:
+
+```bash
+python main.py <path_to_article_file> <path_to_pdb_file> "<target_protein_name>"
+```
+
+Example:
+```bash
+python main.py ../examples/DHODH/liu2000.pdf ../examples/DHODH/6oc0.pdb "Dihydroorotate dehydrogenase"
+```
+
+You can override default settings in two ways:
+
+1) **Using a Configuration File** (--config-file):  
+You can provide a YAML (.yaml or .yml) or JSON (.json) file to specify multiple configuration overrides.
+
+    Example `my_custom_config.yaml`:
+    ```yaml
+    extraction:
+        model: "gpt-4.1-mini" # Use a different extraction model
+    max_tokens: 4000 # Change max tokens
+    debug: true # Enable debug
+    spacing: 2.0 # Change grid spacing
+    ```
+
+    To run the script:
+    ```bash
+    python main.py <article_path> <pdb_path> "<target_protein>" --config-file my_custom_config.yaml
+    ```
+
+2) **Using Command-Line Overrides** (--set):  
+You can override specific configuration parameters directly from the command line. For nested parameters, use dot notation (e.g., extraction.model).
+    ```bash
+    python main.py <article_path> <pdb_path> "<target_protein>" --set debug=True --set extraction.model="gpt-4.1-mini"
+    ```
