@@ -61,22 +61,23 @@ A Python script, `dataset.py`, is provided to facilitate synchronization between
 **Caution:** Executing these commands will overwrite the target files. It's advisable to back up your data before running synchronization scripts if you are unsure. Also, arbitraty columns in JSON or Excel are not currently supported.
 
 
-## Prerequisites for LLM pocket extraction
+## Quickstart
 
-1.  **Python 3.10**: Ensure you have Python installed.
-2.  **Dependencies**: Install the required Python packages.
+1.  **Dependencies**: Install the required Python packages using conda:
     ```bash
-    pip install -r requirements.txt
+    conda env create -f enviroment.yaml
     ```
-3.  **GROBID**: This project relies on GROBID for processing PDF articles. You need to have a GROBID instance running and accessible. The easiest way is to use Docker:
+2.  **GROBID**: This project relies on GROBID for processing PDF articles. You need to have a GROBID instance running and accessible. The easiest way is to use Docker:
     ```bash
     docker run --rm --gpus all --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.8.1
     ```
+3. To parse scientific PDFs, we use leverage the [scipdf_parser](https://github.com/titipata/scipdf_parser) library. For detailed instructions on installation and usage, please refer to the repository.
 4. **API Keys**: Set up your `OPENAI_API_KEY` or `GOOGLE_API_KEY`:
     ```bash
     export OPENAI_API_KEY=YOUR_KEY
     export GOOGLE_API_KEY=YOUR_KEY
     ```
+    Or create dedicated `.env` file.
 
 ## How to Run
 
@@ -90,6 +91,10 @@ python main.py <path_to_article_file> <path_to_pdb_file> "<target_protein_name>"
 Example:
 ```bash
 python main.py ../examples/DHODH/liu2000.pdf ../examples/DHODH/6oc0.pdb "Dihydroorotate dehydrogenase"
+```
+Example:
+```bash
+python main.py ../examples/Polymerase_alpha_human/baranovskiy2014.pdf ../examples/Polymerase_alpha_human/4qcl.pdb "Polymerase alpha"
 ```
 
 You can override default settings in two ways:

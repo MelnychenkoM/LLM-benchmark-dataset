@@ -1,4 +1,3 @@
-import wandb
 import os
 import tempfile
 
@@ -67,6 +66,9 @@ class PromptBuilder(ABC):
         self.prompt_artifact_description = prompt_artifact_description
         self.prompt_artifact_tags = prompt_artifact_tags if prompt_artifact_tags else []
         self.prompt_artifact_metadata = prompt_artifact_metadata if prompt_artifact_metadata else {}
+
+        if self.project is not None:
+            import wandb
 
         if version is None and automatically_update_version:
             self.update_artifact()

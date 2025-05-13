@@ -35,7 +35,56 @@ from bs4 import XMLParsedAsHTMLWarning
 import warnings
 warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
-load_dotenv('keys.env')
+
+load_dotenv()
+
+CONFIG = {
+    "extraction": {
+        "model": "gpt-4o-mini",
+        "max_tokens": 5000,
+        "temperature": 0
+    },
+    "refine": {
+        "model": "gpt-4o-mini",
+        "max_tokens": 5000,
+        "temperature": 0
+    },
+    "filter": {
+        "model": "gpt-4o-mini",
+        "max_tokens": 2500,
+        "temperature": 0
+    },
+    "parse": {
+        "model": "gpt-4o-mini",
+        "max_tokens": 3000,
+        "temperature": 0
+    },
+    "refine_call": True,
+    "filter_call": True,
+    "spacing": 1.5,
+    "max_offset": 1,
+    "threshold_chain_match": 0.6,
+    "threshold_cluster_match": 0.7,
+    "threshold_merge": 0.7,
+    "threshold_residue_match": 0.3,
+    "threshold_pocket_match": 0.1,
+    "return_best_match": True,
+    "clustering": {
+        "bandwidth": 10,
+        "cluster_all": False
+    },
+    "debug": False
+}
+
+
+class PrefixAdapter(logging.LoggerAdapter):
+    def __init__(self, logger, extra=None):
+        super().__init__(logger, extra or {})
+        self.prefix = self.extra.get('prefix', '')
+
+    def process(self, msg, kwargs):
+        return f"[{self.prefix}] {msg}", kwargs
+
 
 def deep_update(source, overrides):
     """
@@ -85,54 +134,6 @@ def set_nested_value(config_dict, key_path_str, value_str):
     final_key = keys[-1]
     parsed_value = _parse_value(value_str)
     d[final_key] = parsed_value
-
-
-CONFIG = {
-    "extraction": {
-        "model": "gpt-4o-mini",
-        "max_tokens": 5000,
-        "temperature": 0
-    },
-    "refine": {
-        "model": "gpt-4o-mini",
-        "max_tokens": 5000,
-        "temperature": 0
-    },
-    "filter": {
-        "model": "gpt-4o-mini",
-        "max_tokens": 2500,
-        "temperature": 0
-    },
-    "parse": {
-        "model": "gpt-4o-mini",
-        "max_tokens": 3000,
-        "temperature": 0
-    },
-    "refine_call": True,
-    "filter_call": True,
-    "spacing": 1.5,
-    "max_offset": 1,
-    "threshold_chain_match": 0.6,
-    "threshold_cluster_match": 0.7,
-    "threshold_merge": 0.7,
-    "threshold_residue_match": 0.3,
-    "threshold_pocket_match": 0.1,
-    "return_best_match": True,
-    "clustering": {
-        "bandwidth": 10,
-        "cluster_all": False
-    },
-    "debug": False
-}
-
-
-class PrefixAdapter(logging.LoggerAdapter):
-    def __init__(self, logger, extra=None):
-        super().__init__(logger, extra or {})
-        self.prefix = self.extra.get('prefix', '')
-
-    def process(self, msg, kwargs):
-        return f"[{self.prefix}] {msg}", kwargs
     
 
 def setup_output_directory(out_path: str, 
@@ -438,7 +439,7 @@ def main(article_path, pdb_path, target_protein, config):
             grid = create_grid(alpha_spheres, config['spacing'])
 
             corrected_grid = correct_volume_grid(grid, protein, alpha_spheres)
-            corrected_grid = clean_grid(corrected_grid, protein, radius='auto')
+            # corrected_grid = clean_grid(corrected_grid, protein, radius='auto')
             
             logging.info("Geometric pocket: {}, Num. grid points: {}, Matched pockets: {}".format(
                     new_pockets[i]['pocket_id'], len(corrected_grid), indices

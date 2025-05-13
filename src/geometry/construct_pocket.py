@@ -362,10 +362,11 @@ def clean_grid(grid: np.ndarray,
     if isinstance(radius, (int, float)):
         contact_mask = distances <= radius
     elif radius == 'auto':
-        radius_vdw = [
+        radius_vdw = np.array([
             vdw_radius_protor(atom.res_name, atom.atom_name)
             for atom in protein
-        ]
+        ])
+        radius_vdw[radius_vdw == None] = 1.5
         contact_mask = distances <= radius_vdw
     else:
         raise ValueError(f"The parameter 'radius' should be a number or 'auto'.")
