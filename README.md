@@ -1,5 +1,5 @@
 # Leveraging Large Language Models for Literature-Driven Prioritization of Protein Binding Pockets
-This repository contains the code and benchmark dataset associated with the paper **Leveraging Large Language Models for Literature-Driven Prioritization of Protein Binding Pockets**.
+This repository contains the code and benchmark dataset associated with the preprint [**Leveraging Large Language Models for Literature-Driven Prioritization of Protein Binding Pockets**](https://www.biorxiv.org/content/10.1101/2025.05.13.653394v1).
 
 ![](workflow.jpg)
 
@@ -7,7 +7,7 @@ This repository contains the code and benchmark dataset associated with the pape
 
 1.  **Dependencies**: Install the required Python packages using conda:
     ```bash
-    conda env create -f enviroment.yaml
+    conda env create -f environment.yml
     ```
 2.  **GROBID**: This project relies on GROBID for processing PDF articles. You need to have a GROBID instance running and accessible. The easiest way is to use Docker:
     ```bash
@@ -30,11 +30,11 @@ To run the script with default settings inside the `src` folder:
 python main.py <path_to_article_file> <path_to_pdb_file> "<target_protein_name>"
 ```
 
-Example:
+Example #1:
 ```bash
 python main.py ../examples/DHODH/liu2000.pdf ../examples/DHODH/6oc0.pdb "Dihydroorotate dehydrogenase"
 ```
-Example:
+Example #2:
 ```bash
 python main.py ../examples/Polymerase_alpha_human/baranovskiy2014.pdf ../examples/Polymerase_alpha_human/4qcl.pdb "Polymerase alpha"
 ```
@@ -72,7 +72,7 @@ This dataset compiles information on protein-ligand binding pockets, curated fro
 
 Two Excel files provide an aggregated view of the data:
 
-1.  **`LLM-benchmark-dataset/tables/pockets.xlsx`**: This file serves as a primary index and contains general information for each publication and the pockets it describes. Key columns include:
+1.  **`benchmark-dataset/tables/pockets.xlsx`**: This file serves as a primary index and contains general information for each publication and the pockets it describes. Key columns include:
     *   `paper_id`: Unique identifier for the publication (e.g., `shen2018`).
     *   `paper_name`: Title of the publication.
     *   `DOI`: Digital Object Identifier of the publication.
@@ -82,7 +82,7 @@ Two Excel files provide an aggregated view of the data:
     *   `ligands`: Comma-separated list of ligands associated with the pocket.
     *   `folder_name`: Folder name where the paper is located.
 
-2.  **`LLM-benchmark-dataset/tables/amino_acids.xlsx`**: This file links specific amino acid residues to the binding pockets defined in `pockets.xlsx`. Key columns include:
+2.  **`benchmark-dataset/tables/amino_acids.xlsx`**: This file links specific amino acid residues to the binding pockets defined in `pockets.xlsx`. Key columns include:
     *   `paper_id`: Links back to the publication.
     *   `target`: The biological target.
     *   `pocket_id`: Links back to the specific pocket.
